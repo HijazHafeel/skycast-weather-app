@@ -12,7 +12,7 @@
  
   <body> 
     <div class="page"> 
-      ``` 
+      
       <!-- Header --> 
       <header class="site-header"> 
         <div class="brand"> 
@@ -22,6 +22,10 @@
             <p>Weather made simple</p> 
           </div> 
         </div> 
+        <nav aria-label="Main navigation">
+          <a href="#search">Search</a>
+          <a href="#forecast">Forecast</a>
+        </nav>
         <div class="header-badge">   Live Weather</div> 
 	
 
@@ -30,7 +34,7 @@
       <!-- Main Content --> 
       <main> 
         <!-- Hero / Search Section --> 
-        <section class="hero"> 
+        <section class="hero" id="search">
           <h2>Check the weather anywhere</h2> 
           <p class="subtitle"> 
             Search any city for current weather and a 5-day forecast. 
@@ -74,7 +78,7 @@
         </section> 
  
         <!-- Forecast --> 
-        <section class="forecast-section"> 
+        <section class="forecast-section" id="forecast">
           <div class="section-heading"> 
             <div> 
               <h2>5-Day Forecast</h2> 
@@ -108,11 +112,11 @@
         <p>Simple, fast and reliable weather information.</p>
 
 	     <div class="footer-bottom"> 
-          <span>© 2026 SkyCast</span> 
+          <span>&copy 2026 SkyCast</span> 
           <span>Powered by Open-Meteo</span> 
         </div> 
       </footer> 
-      ``` 
+      
     </div> 
  
     <script src="script.js"></script> 
